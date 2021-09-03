@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Semantic UI-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- personal css -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>calculator</title>
+  </head>
+  <body class="dark-theme">
+    <!-- Header -->
+    <header class="header-cointainer">
+      <h1>calculator!</h1>
+      <div class="ui slider checkbox" id="theme-button">
+        <input type="checkbox" checked name="newsletter" />
+        <label><i class="uil uil-moon" id="theme-icon"></i></label>
+      </div>
+    </header>
+    <!-- calculator -->
+    <div class="calculator">
+      <div class="grid-container">
+        <div class="grid-item item-screen">
+          <div data-previous-operand value="" class="previous-operand"></div>
+          <div data-current-operand value="56" class="current-operand"></div>
+        </div>
+
+        <button
+          date-op
+          type="button"
+          value="+"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          +
+        </button>
+
+        <button
+          date-op
+          type="button"
+          value="-"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          -
+        </button>
+
+        <button
+          date-op
+          type="button"
+          value="*"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          &times;
+        </button>
+
+        <button
+          date-op
+          type="button"
+          value="/"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          &divide;
+        </button>
+        <button
+          date-num
+          type="button"
+          value="7"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          7
+        </button>
+        <button
+          date-num
+          type="button"
+          value="8"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          8
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="9"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          9
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="6"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          6
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="5"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          5
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="4"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          4
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="1"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          1
+        </button>
+        <button
+          date-num
+          type="button"
+          value="2"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          2
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="3"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          3
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="0"
+          class="grid-item btn btn-dark btn-lg"
+        >
+          0
+        </button>
+
+        <button
+          date-num
+          type="button"
+          value="."
+          class="grid-item btn btn-warning btn-lg"
+        >
+          .
+        </button>
+        <button
+          data-clear
+          type="button"
+          value="AC"
+          id="clr"
+          class="grid-item btn btn-danger btn-lg"
+        >
+          AC
+        </button>
+        <button
+          data-equals
+          type="button"
+          value="="
+          id="equal"
+          class="grid-item btn btn-success btn-lg operator-equal"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer-cointainer">
+      <div>
+        <ul>
+          <li class="li-item">
+            <a href="https://www.facebook.com/Ha.Zem.A.07" target="_blank">
+              <div class="bt-circle">
+                <i class="uil uil-facebook-f"></i>
+              </div>
+            </a>
+          </li>
+          <li class="li-item">
+            <a href="https://www.instagram.com/hazem_kami/" target="_blank">
+              <div class="bt-circle">
+                <i class="uil uil-instagram"></i>
+              </div>
+            </a>
+          </li>
+          <li class="li-item">
+            <a
+              href="https://www.linkedin.com/in/hazem-abdennadher-9839aa1ba/"
+              target="_blank"
+            >
+              <div class="bt-circle">
+                <i class="uil uil-linkedin-alt"></i>
+              </div>
+            </a>
+          </li>
+          <li class="li-item">
+            <a href="https://github.com/HazemAbdenandher" target="_blank">
+              <div class="bt-circle">
+                <i class="uil uil-github-alt"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>&copy;2021 Hazem Abdennadher</p>
+      </div>
+    </footer>
+    <script src="scirpt.js"></script>
+  </body>
+</html>
