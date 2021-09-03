@@ -162,9 +162,3 @@ clearButton.addEventListener("click", ()=>{
     calculator.clear()
     calculator.updateDisplay()
 })
-
-
-
-
-
-

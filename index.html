@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap 5 -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+
     <!-- Semantic UI-->
     <link
       rel="stylesheet"
@@ -29,214 +29,221 @@
     <title>calculator</title>
   </head>
   <body class="dark-theme">
-    <!-- Header -->
-    <header class="header-cointainer">
-      <h1>calculator!</h1>
-      <div class="ui slider checkbox" id="theme-button">
-        <input type="checkbox" checked name="newsletter" />
-        <label><i class="uil uil-moon" id="theme-icon"></i></label>
-      </div>
-    </header>
-    <!-- calculator -->
-    <div class="calculator">
-      <div class="grid-container">
-        <div class="grid-item item-screen">
-          <div data-previous-operand value="" class="previous-operand"></div>
-          <div data-current-operand value="56" class="current-operand"></div>
+    <div class="main">
+      <!-- Header -->
+      <header class="header-cointainer">
+        <h1>calculator!</h1>
+        <div class="ui slider checkbox" id="theme-button">
+          <input type="checkbox" checked name="newsletter" />
+          <label><i class="uil uil-moon" id="theme-icon"></i></label>
         </div>
+      </header>
+      <!-- calculator -->
+      <div class="calculator">
+        <div class="grid-container">
+          <div class="grid-item item-screen">
+            <div data-previous-operand value="" class="previous-operand"></div>
+            <div data-current-operand value="56" class="current-operand"></div>
+          </div>
 
-        <button
-          date-op
-          type="button"
-          value="+"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          +
-        </button>
+          <button
+            date-op
+            type="button"
+            value="+"
+            class="grid-item btn btn-dark"
+          >
+            +
+          </button>
 
-        <button
-          date-op
-          type="button"
-          value="-"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          -
-        </button>
+          <button
+            date-op
+            type="button"
+            value="-"
+            class="grid-item btn btn-dark"
+          >
+            -
+          </button>
 
-        <button
-          date-op
-          type="button"
-          value="*"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          &times;
-        </button>
+          <button
+            date-op
+            type="button"
+            value="*"
+            class="grid-item btn btn-dark"
+          >
+            &times;
+          </button>
 
-        <button
-          date-op
-          type="button"
-          value="/"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          &divide;
-        </button>
-        <button
-          date-num
-          type="button"
-          value="7"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          7
-        </button>
-        <button
-          date-num
-          type="button"
-          value="8"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          8
-        </button>
+          <button
+            date-op
+            type="button"
+            value="/"
+            class="grid-item btn btn-dark"
+          >
+            &divide;
+          </button>
+          <button
+            date-num
+            type="button"
+            value="7"
+            class="grid-item btn btn-dark"
+          >
+            7
+          </button>
+          <button
+            date-num
+            type="button"
+            value="8"
+            class="grid-item btn btn-dark"
+          >
+            8
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="9"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          9
-        </button>
+          <button
+            date-num
+            type="button"
+            value="9"
+            class="grid-item btn btn-dark"
+          >
+            9
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="6"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          6
-        </button>
+          <button
+            date-num
+            type="button"
+            value="6"
+            class="grid-item btn btn-dark"
+          >
+            6
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="5"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          5
-        </button>
+          <button
+            date-num
+            type="button"
+            value="5"
+            class="grid-item btn btn-dark"
+          >
+            5
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="4"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          4
-        </button>
+          <button
+            date-num
+            type="button"
+            value="4"
+            class="grid-item btn btn-dark"
+          >
+            4
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="1"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          1
-        </button>
-        <button
-          date-num
-          type="button"
-          value="2"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          2
-        </button>
+          <button
+            date-num
+            type="button"
+            value="1"
+            class="grid-item btn btn-dark"
+          >
+            1
+          </button>
+          <button
+            date-num
+            type="button"
+            value="2"
+            class="grid-item btn btn-dark"
+          >
+            2
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="3"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          3
-        </button>
+          <button
+            date-num
+            type="button"
+            value="3"
+            class="grid-item btn btn-dark"
+          >
+            3
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="0"
-          class="grid-item btn btn-dark btn-lg"
-        >
-          0
-        </button>
+          <button
+            date-num
+            type="button"
+            value="0"
+            class="grid-item btn btn-dark"
+          >
+            0
+          </button>
 
-        <button
-          date-num
-          type="button"
-          value="."
-          class="grid-item btn btn-warning btn-lg"
-        >
-          .
-        </button>
-        <button
-          data-clear
-          type="button"
-          value="AC"
-          id="clr"
-          class="grid-item btn btn-danger btn-lg"
-        >
-          AC
-        </button>
-        <button
-          data-equals
-          type="button"
-          value="="
-          id="equal"
-          class="grid-item btn btn-success btn-lg operator-equal"
-        >
-          =
-        </button>
+          <button
+            date-num
+            type="button"
+            value="."
+            class="grid-item btn btn-dark"
+          >
+            .
+          </button>
+          <button
+            data-clear
+            type="button"
+            value="AC"
+            id="clr"
+            class="grid-item btn btn-danger"
+          >
+            AC
+          </button>
+          <button
+            data-equals
+            type="button"
+            value="="
+            id="equal"
+            class="grid-item btn btn-success operator-equal"
+          >
+            =
+          </button>
+        </div>
       </div>
-    </div>
 
-    <footer class="footer-cointainer">
-      <div>
+      <div class="footer-cointainer">
         <ul>
           <li class="li-item">
-            <a href="https://www.facebook.com/Ha.Zem.A.07" target="_blank">
-              <div class="bt-circle">
-                <i class="uil uil-facebook-f"></i>
-              </div>
-            </a>
-          </li>
-          <li class="li-item">
-            <a href="https://www.instagram.com/hazem_kami/" target="_blank">
-              <div class="bt-circle">
-                <i class="uil uil-instagram"></i>
-              </div>
+            <a
+              class="bt-circle"
+              href="https://www.facebook.com/Ha.Zem.A.07"
+              target="_blank"
+            >
+              <i class="uil uil-facebook-f"></i>
             </a>
           </li>
           <li class="li-item">
             <a
-              href="https://www.linkedin.com/in/hazem-abdennadher-9839aa1ba/"
+              class="bt-circle"
+              href="https://www.instagram.com/hazem_kami/"
               target="_blank"
             >
-              <div class="bt-circle">
-                <i class="uil uil-linkedin-alt"></i>
-              </div>
+              <i class="uil uil-instagram"></i>
             </a>
           </li>
           <li class="li-item">
-            <a href="https://github.com/HazemAbdenandher" target="_blank">
-              <div class="bt-circle">
-                <i class="uil uil-github-alt"></i>
-              </div>
+            <a
+              class="bt-circle"
+              href="https://www.linkedin.com/in/hazem-abdennadher-9839aa1ba/"
+              target="_blank"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+          </li>
+          <li class="li-item">
+            <a
+              class="bt-circle"
+              href="https://github.com/HazemAbdenandher"
+              target="_blank"
+            >
+              <i class="uil uil-github-alt"></i>
             </a>
           </li>
         </ul>
+
+        <div>
+          <p>&copy;2021 Hazem Abdennadher</p>
+        </div>
       </div>
-      <div>
-        <p>&copy;2021 Hazem Abdennadher</p>
-      </div>
-    </footer>
+    </div>
+
     <script src="scirpt.js"></script>
   </body>
 </html>

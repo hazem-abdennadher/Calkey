@@ -1,9 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   transition: all 0.3s ease-in-out;
 }
+
+/*===========> main */
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
 /*==========> Header */
 .header-cointainer {
-  min-height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,7 +24,6 @@ body {
 
 /*============> Calculator */
 .calculator {
-  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +73,7 @@ body {
   grid-row-start: 3;
   grid-row-end: 7;
   height: 100%;
+  width: 100%;
 }
 
 /*==================> Icons */
@@ -73,17 +86,16 @@ body {
 
 /*=============> footer */
 .footer-cointainer {
-  min-height: 10vh;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .bt-circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  margin: 0 5px;
   width: 34px;
   height: 34px;
   text-align: center;
@@ -93,9 +105,14 @@ body {
   cursor: pointer;
 }
 
-li {
-  display: inline-block;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-self: center;
 }
+
 .li-item {
   transition: 0.2s;
 }
@@ -123,4 +140,18 @@ body.dark-theme .item-screen {
 
 body.dark-theme .bt-circle {
   border: 1px solid #fff;
+}
+
+@media screen and (max-width: 460px) {
+  .grid-item {
+    font-size: 1.5rem;
+  }
+  .grid-container {
+    height: 400px;
+    width: 300px;
+  }
+  .footer-cointainer {
+    margin: 0;
+    justify-content: space-between;
+  }
 }
