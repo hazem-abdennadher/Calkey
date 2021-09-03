@@ -14,8 +14,8 @@ themeButton.addEventListener("click", ()=>{
 
 
 
-//============================================================>Calculator
-//---------variables 
+//=============================================>Calculator
+
 
 class Calculator{
     constructor(previousOperandText,currentOperandText){
